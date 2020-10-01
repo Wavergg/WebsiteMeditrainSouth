@@ -1,0 +1,154 @@
+﻿
+@{
+    ViewBag.Title = "MediTrain South - Contact Us";
+}
+
+@model MeditrainSouth.Models.Message
+
+<div>
+    <div id="index-banner" class="parallax-container overlayBackgroundColor" style="">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <br><br>
+                <h1 class="header m-center orange-text text-lighten-5 header-top-0">
+                    Contact Meditrain
+                </h1>
+                <div class="row ">
+                    <h5 class="header m-center white-text col s12 light" style="padding-left:0px;">We’re here to help and answer any question you might have. We look forward to hearing from you</h5>
+                </div>
+                <div class="row m-center">
+                    <div class="col l1 hide-on-small-only"></div>
+
+                    <a id="FillForms-button" href="#contactUsPanel" class="btn-large waves-effect waves-light indigo lighten-1">Fill forms</a>
+
+                    <a href="tel:+64277477695" id="PhoneUs-button" class="font-weight-bold transparent btn-large">
+                        Phone us: 027 747 7695
+                    </a>
+                </div>
+                <br><br>
+            </div>
+        </div>
+        <div class="parallax"><img src="~/lib/images/bg-section-2.jpg" alt="Contact Meditrain" style="transform: translate3d(-50%, 230.533px, 0px); opacity: 1;"></div>
+    </div>
+
+    <div class="light-blue darken-4 ">
+        <div class="row" style="margin-bottom:0px;padding-top:90px;padding-bottom:90px;width:90%">
+            <div class="col l5 push-l7 center">
+                <div class="" style="width:95%">
+                    <h4 class="white-text">Contact Details</h4>
+                    <div class="divider"></div>
+                    <ul class="collection">
+                        <li class="collection-item avatar valign-wrapper">
+                            <i class="material-icons circle light-blue darken-4">location_on</i>
+                            <span class="title red-text font-weight-bold col l6">Head Office Address</span>
+                            <p class="right-align col l7" >
+                                622 Clutha Valley Road<br />
+                                RD 4 Balclutha  9274
+                            </p>
+                        </li>
+                        @*<li class="collection-item avatar valign-wrapper">
+                            <i class="material-icons circle teal darken-1 ">mail</i>
+                            <span class="title red-text font-weight-bold col l6">Postal Box</span>
+                            <p class="right-align col l7">
+                                PO Box 13 535
+                                Onehunga
+                                Auckland
+                            </p>
+                        </li>*@
+                        <li class="collection-item avatar valign-wrapper">
+                            <i class="material-icons circle light-blue darken-4">phone</i>
+                            <span class="title red-text font-weight-bold col l6">Phone</span>
+                            <p class="col l7 s12 right-align">
+                                <a href="tel:+64277477695" class="purple-text" style="text-decoration:underline;text-align:right">027 747 7695</a><br />
+                                <a href="tel:+6434181918" class="teal-text" style="text-decoration:underline;text-align:right">03 4181 918</a>
+                            </p>
+                        </li>
+                        <li class="collection-item avatar valign-wrapper">
+                            <i class="circle light-blue darken-4">@@</i>
+                            <span class="title red-text font-weight-bold col l6">Email</span>
+                            <a href="mailto:m.meditrain@gmail.com" class="right-align col l7 black-text" style="font-size:0.9rem;text-decoration:underline">
+                                m.meditrain@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-panel z-depth-2 light col l7 pull-l5" id="contactUsPanel" style="padding-top:40px;padding-bottom:110px;padding-left:40px;padding-right:40px">
+                <form asp-action="Index" asp-controller="Contact" method="post" class="col s12">
+                    <div asp-validation-summary="ModelOnly" class="red-text"></div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input placeholder="First Name" asp-for="FirstName" id="first_name" type="text" class="validate">
+                            <label asp-for="FirstName" for="first_name" class="black-text">First Name <span class=red-text>*</span></label>
+                            <span asp-validation-for="FirstName" class="red-text"></span>
+                        </div>
+                        <div class="input-field col s6">
+                            <input asp-for="LastName" placeholder="Last Name" id="last" type="text" class="validate">
+                            <label asp-for="LastName" for="last_name" class="black-text">Last Name</label>
+                            <span asp-validation-for="LastName" class="red-text"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input asp-for="Email" id="email" type="email" class="validate">
+                            <label asp-for="Email" for="email" class="black-text">Email <span class=red-text>*</span></label>
+                            <span asp-validation-for="Email" class="red-text"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input asp-for="Phone" id="phone" type="text" class="validate">
+                            <label asp-for="Phone" for="phone" class="black-text">Phone</label>
+                            <span asp-validation-for="Phone" class="red-text"></span>
+                        </div>
+                    </div>
+                    <div class="input-field col s12 padding-y-6" style="padding-left:0px;padding-right:0px;">
+                        <select asp-for="Region">
+                            <option value="Northland">Northland</option>
+                            <option value="Auckland">Auckland</option>
+                            <option value="Waikato">Waikato</option>
+                            <option value="Bay of Plenty">Bay of Plenty</option>
+                            <option value="Coromandel">Coromandel</option>
+                            <option value="Gisborne">Gisborne</option>
+                            <option value="Hawke's Bay">Hawke's Bay</option>
+                            <option value="Taranaki">Taranaki</option>
+                            <option value="Central Plateau">Central Plateau</option>
+                            <option value="Wanganui">Wanganui</option>
+                            <option value="Manawatu">Manawatu</option>
+                            <option value="Wellington">Wellington</option>
+                            <option value="Tasman">Tasman</option>
+                            <option value="Nelson">Nelson</option>
+                            <option value="Marlborough">Marlborough</option>
+                            <option value="West Coast">West Coast</option>
+                            <option value="Canterbury">Canterbury</option>
+                            <option value="Otago">Otago</option>
+                            <option value="Central Otago">Central Otago</option>
+                            <option value="Southland" selected>Southland</option>
+                        </select>
+                        <label asp-for="Region" class="black-text">Region</label>
+                        <span asp-validation-for="Region" class="red-text"></span>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea asp-for="MessageContent" id="textarea1" class="materialize-textarea"></textarea>
+                            <label asp-for="MessageContent" for="textarea1" class="black-text">Message <span class=red-text>*</span></label>
+                            <span asp-validation-for="MessageContent" class="red-text"></span>
+                        </div>
+                    </div>
+                    <div class="g-recaptcha" data-sitekey="6LdPqtIZAAAAAEVFqXtX51iA8KS8Lkjp4uZisBNM"></div>
+                    <input type="submit" class="btn red white-text" value="Send Message" />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script>
+    function onSubmit(token) {
+        document.getElementById("demo-form").submit();
+    }
+</script>
+

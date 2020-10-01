@@ -1,0 +1,220 @@
+﻿@{
+    ViewBag.Title = "MediTrain South - Homepage";
+}
+
+@* Top Banner starts *@
+<div id="index-banner" class="parallax-container overlayBackgroundColor">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <br><br>
+                <h1 class="header m-center orange-text text-lighten-5 header-top-0" style="font-size:3.1rem;">
+                    First Aid Training and Courses throughout Otago and Southland
+                </h1>
+            <div class="row center">
+                <h5 class="header white-text col s12 light">You can make a difference. First Aid Training in any emergency as a First Responder.</h5>
+            </div>
+            <div class="row center">
+                <a asp-controller="Contact" asp-action="Index" id="download-button" class="btn-large waves-effect waves-light indigo ">Contact Us</a>
+            </div>
+            <br><br>
+        </div>
+    </div>
+    <div class="parallax"><img src="~/lib/images/banner.jpg" alt="First Aid Technique" style="transform: translate3d(-50%, 230.533px, 0px); opacity: 1;"></div>
+</div>
+@* Top Banner Ends *@
+@* Cards Area *@
+<div class="padding-2 z-depth-2">
+    <h3></h3>
+</div>
+
+
+<section class="row" style="padding-top:30px;">
+    <div class="col m10 offset-m1">
+        <h3 class="center-align indigo-text">Popular Courses</h3>
+        <div class="divider"></div>
+    </div>
+    <div class="col m12 s12" style="margin-top:50px;">
+        <div class="carousel carousel-slider ">
+            <div class="carousel-item black-text" style="width:320px;" href="#one">
+                <div class="card" style="border-bottom: solid 1px #009688">
+                    <div class="card-image">
+                        <img src="~/lib/images/banner-work-first-aid.jpg" alt="workplace first aid course Southland New Zealand Meditrain" height="120">
+                    </div>
+                    <div class="card-content right-align">
+                        <p class="card-title left-align indigo-text" style="font-size:2rem">
+                            Comprehensive Workplace First Aid
+                        </p>
+                        <p class="left-align">
+                            The course is designed to motivate and train anyone to be the first responder and provide immediate first aid assistance in emergency situation.
+                        </p>
+                        <a asp-controller="WorkplaceFirstAid" asp-action="Index" class="btn btn-small" style="margin-top:20px;">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item black-text" style="width:320px;" href="#one">
+                <div class="card" style="border-bottom: solid 1px #009688">
+                    <div class="card-image">
+                        <img src="~/lib/images/banner-first-aid-training.jpg" alt="first aid training Southland New Zealand Meditrain" height="120">
+                    </div>
+                    <div class="card-content right-align">
+                        <p class="card-title left-align indigo-text" style="font-size:2rem">
+                            Basic First Aid Training
+                        </p>
+                        <p class="left-align">
+                            The course is designed to motivate and train anyone to be the first responder and provide immediate first aid assistance in emergency situation.
+                        </p>
+                        <a asp-controller="BasicFirstAid" asp-action="Index" class="btn btn-small" style="margin-top:20px;">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item black-text" style="width:320px;" href="#one">
+                <div class="card" style="border-bottom: solid 1px #009688">
+                    <div class="card-image">
+                        <img src="~/lib/images/banner.jpg" alt="Life Support Course Southland New Zealand Meditrain" height="120">
+                    </div>
+                    <div class="card-content right-align">
+                        <p class="card-title left-align indigo-text" style="font-size:2rem">
+                            Basic Life Support (CPR)
+                        </p>
+                        <p class="left-align">
+                            This certificated course concentrates on the life saving skills of Cardiopulmonary Resuscitation, which is rescue breathing together with chest (i.e. heart) compressions.
+                        </p>
+                        <a asp-controller="BasicLifeSupport" asp-action="Index" class="btn btn-small" style="margin-top:5px;">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item black-text" style="width:320px;" href="#one">
+                <div class="card" style="border-bottom: solid 1px #009688">
+                    <div class="card-image">
+                        <img src="~/lib/images/banner-dental.jpg" height="120">
+                    </div>
+                    <div class="card-content right-align" style="padding-bottom:20px;">
+                        <p class="card-title left-align indigo-text" style="font-size:2rem">
+                            Advanced Life Support Course for Dental Professional
+                        </p>
+                        <p class="left-align">
+                            This course is designed for dental professional to deal with medical emergencies that occur in the dental practice.
+                        </p>
+                        <a asp-controller="AdvancedCourseForDentalProfessional" asp-action="Index" class="btn btn-small" style="margin-top:0px;">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item black-text" style="width:320px;" href="#one">
+                <div class="card" style="border-bottom: solid 1px #009688">
+                    <div class="card-image">
+                        <img src="~/lib/images/banner-child-first-aid.jpg" height="120">
+                    </div>
+                    <div class="card-content right-align">
+                        <p class="card-title left-align indigo-text" style="font-size:2rem">
+                            Childcare First Aid
+                        </p>
+                        <p class="left-align">
+                            This course is designed for people to effectively handling an emergency situation that occur on a young child or infant.
+                            This course is perfect for parents, grandparents or babysitters.<br />
+                        </p>
+                        <a asp-controller="ChildcareFirstAid" asp-action="Index" class="btn btn-small" style="margin-top:20px;">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* Cards Area Ends *@
+<br />
+
+<div class="parallax-container valign-wrapper sub-parallax-container sub-parallax-customHeight">
+    <div class="section parallax-side-content">
+        <div class="container">
+            <div class="row col s6 white-text">
+
+
+                <h5 class="header center font-weight-bold" style="position:relative">
+                    Quality Courses and Materials
+
+                </h5>
+
+                <p style="text-align:justify">
+                    &nbsp; &nbsp;  &nbsp; MediTrain Ltd teaches First Aid courses across New Zealand and is registered with NZQA as a Private Training Establishment (PTE).
+                    Our First Aid courses are recognised by the Ministry of Education and meet the minimum workplace requirements specified by Worksafe.
+                </p>
+                <p style="text-align:justify">
+                    &nbsp; &nbsp;  &nbsp; Our audio visual training presentations, First Aid manuals and all training materials are sourced, written and filmed in New Zealand for New Zealanders!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="parallax"><img src="~/lib/images/bg-section.jpg" alt="First Aid Kits"></div>
+</div>
+
+<div class="container">
+    <div class="section">
+        <div class="row">
+            <div class="col l12 center" style="padding:0px">
+                <h4>We believe and value that...</h4>
+                <div class="left-align">
+                    <div class="col l6">
+                        <p class="hoverable" style="padding:5px;"><i class="material-icons left ">add</i>Quality instruction and quality materials lead to quality results</p>
+                        <p class="hoverable" style="padding:5px;"><i class="material-icons left ">add</i>Our instructors, who know their subject and enjoy people, are the best!</p>
+                        <p class="hoverable" style="padding:5px;"><i class="material-icons left ">add</i>Clear, concise materials are easily understood</p>
+                    </div>
+                    <div class="col l6">
+                        <p class="hoverable" style="padding:5px;"><i class="material-icons left ">add</i>Practical experience on mannikins makes YOU feel competent and confident</p>
+                        <p class="hoverable" style="padding:5px;"><i class="material-icons left ">add</i>‘Seeing, hearing and doing’ is the most effective way of learning</p>
+                        <p class="hoverable" style="padding:5px;"><i class="material-icons left ">add</i>Learning First Aid should be a relaxed, enjoyable experience</p>
+                    </div>
+                </div>
+            </div>
+            <a asp-controller="AboutUs" asp-action="Index" class="waves-effect waves-light right btn btn-small orange lighten-1">About Us</a>
+        </div>
+    </div>
+</div>
+<div class="z-depth-2">
+    <div class="margin-top-2 container">
+        <div class="container">
+            <h4 class=" center indigo-text" style="margin-top:0px;padding-top:50px;">Meet Margaret Laughton</h4>
+        </div>
+        <div class="container">
+            <hr style="margin:0px;" />
+        </div>
+        <div class="row padding-md-header" style="margin-bottom:0">
+            <div class="col m4 offset-m1 s8 offset-s2">
+                <img src="~/lib/images/margaret.jpg" class="responsive-img" />
+            </div>
+            <div class="col m7">
+                <div class="show-on-small margin-y-2 hide-on-med-and-up">
+                </div>
+                <p style="text-align:justify;margin-top:0px">
+                    Margaret has over 35 years experience in first aid and belongs to a first response unit.
+                    With ten years of experience in working as a Mountain Safety Instructor, Has NZRC level 5,
+                    Works as an Occupational Health Nurse and Has worked as a midwife.
+                </p>
+                <p style="text-align:justify">
+                    <ul>
+                        <li class="valign-wrapper margin-top-1">
+                            <i class="material-icons circle teal darken-1">phone</i> <a href="tel:+6434181918">&nbsp; <span class="black-text" style="text-decoration:underline">Ph. 03 4181918</span></a>
+                        </li>
+                        <li class="valign-wrapper margin-top-1">
+                            <i class="material-icons circle yellow darken-1">phone_android</i> <a href="tel:0277477695">&nbsp; <span class="black-text" style="text-decoration:underline">M. 027 747 7695</span></a>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="light-blue darken-4 center font-weight-bold">
+    <span class="flow-text white-text">Phone us 0800 084 543</span>
+</div>
+
+
